@@ -1,3 +1,18 @@
-import Header from './Header'
+import React, { Component } from 'react'
+import lodash from 'lodash'
 
-export default Header
+
+export default class Header extends Component {
+  
+  
+  render() {
+    
+    return (
+      <div>
+        Header
+      </div>
+    )
+  }
+  
+}
+
