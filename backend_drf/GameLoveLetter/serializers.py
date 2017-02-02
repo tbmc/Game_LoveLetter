@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User, Group
+from GameLoveLetter.models import Player
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
@@ -12,3 +13,9 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Group
         fields = ("url", "name")
+
+
+class PlayerSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Player
+        fields = ("id", "user")
