@@ -16,6 +16,7 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class PlayerSerializer(serializers.HyperlinkedModelSerializer):
+
     class Meta:
         model = Player
         fields = ("id", "user")
